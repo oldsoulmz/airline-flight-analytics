@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-gray-100 antialiased;
+    font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-900 border border-gray-800 rounded-xl p-5;
+  }
+  .badge-on-time {
+    @apply inline-block px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-900 text-emerald-300;
+  }
+  .badge-delayed {
+    @apply inline-block px-2 py-0.5 rounded-full text-xs font-medium bg-amber-900 text-amber-300;
+  }
+  .badge-major-delay {
+    @apply inline-block px-2 py-0.5 rounded-full text-xs font-medium bg-orange-900 text-orange-300;
+  }
+  .badge-cancelled {
+    @apply inline-block px-2 py-0.5 rounded-full text-xs font-medium bg-red-900 text-red-300;
+  }
+}
